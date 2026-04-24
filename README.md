@@ -17,7 +17,7 @@ A powerful Windows desktop application for migrating CSV and Excel files into Mi
 ### Installation
 
 1. **Download the installer**
-   - Get `OneLakeDataMigration-1.0.1-installer.exe` from releases
+   - Get `OneLakeDataMigration-latest-installer.exe`
 
 2. **Run the installer**
    - Double-click the `.exe` file
