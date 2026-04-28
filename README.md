@@ -122,70 +122,96 @@ Power BI Service
 
 ## ⚙️ Configuration
 
-### User Authentication (Default)
+### User Authentication (Required)
 
-By default, the application uses your personal Microsoft account for authentication.
+The application uses your personal Microsoft account for login and file operations.
 
-**No additional configuration needed** - just run the app and sign in when prompted.
+**Required Setup:**
 
-### Service Principal Authentication (Advanced)
-
-For automated workflows or scheduled migrations, you can configure the app to use a **Service Principal** instead of user credentials.
-
-#### Setup Service Principal:
-
-1. **Create a Service Principal**
-   - In the app registration you created above, go to "Certificates & secrets"
-   - Click "+ New client secret"
-   - Set the expiration period
-   - Copy the secret value
-
-2. **Grant Lakehouse Access**
-   - In Microsoft Fabric, open your workspace
-   - Go to "Workspace settings" → "Workspace members"
-   - Click "Add service principal"
-   - Search for your app registration by its display name
-   - Select it and grant the necessary role (e.g., Contributor)
-
-#### Configure the Application:
-
-1. **Open the Configuration File**
+1. **Configure User Credentials in .env**
    - Press `Win + R`
    - Type: `%APPDATA%\OneLakeDataMigration`
    - Press Enter
-   - Open the `.env` file with Notepad or your preferred editor
+   - Open the `.env` file with Notepad
 
-2. **Update Environment Variables**
+2. **Fill in Your Azure AD Application Details**
    ```
-   # Azure AD Configuration
-   AZURE_TENANT_ID=your_tenant_id_here
-   AZURE_CLIENT_ID=your_client_id_here
-   AZURE_CLIENT_SECRET=your_client_secret_here
-   
-   # Optional: Fabric Configuration
-   # FABRIC_WORKSPACE_ID=your_workspace_id_here
-   # FABRIC_LAKEHOUSE_ID=your_lakehouse_id_here
+   AZURE_TENANT_ID=your-tenant-id-here
+   AZURE_CLIENT_ID=your-client-id-here
    ```
 
-3. **Replace with Your Values**
-   - `your_tenant_id_here` → Your Directory (Tenant) ID from Azure AD
-   - `your_client_id_here` → Your Application (Client) ID from Azure AD
-   - `your_client_secret_here` → Your Client Secret from Azure AD
+3. **Get Your Values From Azure Portal**
+   - Go to Azure Portal → Azure Active Directory → App registrations
+   - Select your registered application
+   - **Client ID**: Copy from "Application (client) ID" field
+   - **Tenant ID**: Copy from "Directory (tenant) ID" field
 
-4. **Save the File**
-   - Press `Ctrl + S`
-   - Close the editor
+4. **Save and Restart**
+   - Press `Ctrl + S` to save
+   - Close and reopen the application
+   - Click "Sign In" with your Microsoft account
 
-5. **Restart the Application**
-   - Close the migration tool
-   - Reopen it
-   - The app will now use the service principal credentials
+### Service Principal (Optional - Advanced)
 
-#### Finding Your IDs:
+For automated migrations or unattended operations, you can configure the backend to use a **Service Principal** instead of your personal credentials.
 
-- **Tenant ID**: Azure Portal → Azure AD → Properties → Directory ID
+**Why use a Service Principal?**
+- Unattended/automated migrations
+- No individual user sign-in required
+- Separate credentials from personal account
+- Better for scheduled tasks
+
+#### Setup Service Principal:
+
+1. **Create Service Principal Credentials**
+   - In Azure Portal, go to your app registration
+   - Click "Certificates & secrets" (left sidebar)
+   - Click "+ New client secret"
+   - Set expiration and description
+   - Copy the **secret value immediately** (can't view again)
+
+2. **Grant Service Principal Access to Lakehouse**
+   - In Microsoft Fabric, open your workspace
+   - Go to "Workspace settings" → "Members"
+   - Click "Add service principal or user" (or similar)
+   - Search for your app by name
+   - Grant necessary permissions (Contributor or Admin)
+
+#### Configure Service Principal in .env:
+
+1. **Open the .env file** (same as above)
+   - `Win + R` → `%APPDATA%\OneLakeDataMigration`
+   - Open `.env` with Notepad
+
+2. **Uncomment and Fill Service Principal Section**
+   ```
+   # Uncomment and fill these lines:
+   #SP_TENANT_ID=your-service-principal-tenant-id-here
+   #SP_CLIENT_ID=your-service-principal-client-id-here
+   #SP_CLIENT_SECRET=your-service-principal-client-secret-here
+   ```
+
+3. **Add Your Values**
+   - **SP_TENANT_ID**: Same as AZURE_TENANT_ID
+   - **SP_CLIENT_ID**: Your app's Client ID from Azure Portal
+   - **SP_CLIENT_SECRET**: The secret value you copied (NOT the ID)
+
+4. **Save and Restart Backend**
+   - Press `Ctrl + S` to save
+   - Restart the backend service
+   - Backend will now use service principal credentials for API operations
+
+**Important Notes:**
+- User Authentication (AZURE_*) is always required for login
+- Service Principal (SP_*) is optional and only for backend API operations
+- If both are configured: frontend uses user credentials for login, backend uses service principal for API calls
+- If only user credentials are configured: everything uses your personal account
+
+#### Finding Service Principal Values:
+
+- **Tenant ID**: Azure Portal → Azure AD → Properties → Directory ID (same as AZURE_TENANT_ID)
 - **Client ID**: Azure Portal → App Registrations → Your App → Application ID
-- **Client Secret**: Azure Portal → App Registrations → Your App → Certificates & Secrets
+- **Client Secret**: Azure Portal → App Registrations → Your App → Certificates & secrets → Value column
 
 ---
 
@@ -351,7 +377,7 @@ For automated workflows or scheduled migrations, you can configure the app to us
 
 ## 📝 Version Information
 
-**Current Version**: 1.0.2  
+**Current Version**: 1.0.3  
 **Last Updated**: April 2026  
 **License**: See LICENSE.txt included in the installation
 
