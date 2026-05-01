@@ -377,7 +377,7 @@ For automated migrations or unattended operations, you can configure the backend
 
 ## 📝 Version Information
 
-**Current Version**: 1.0.3  
+**Current Version**: 1.0.5  
 **Last Updated**: April 2026  
 **License**: See LICENSE.txt included in the installation
 
