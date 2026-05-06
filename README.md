@@ -70,18 +70,17 @@ Power BI Service
    - Sign in with your Azure AD admin account
 
 2. **Access App Registrations**
-   - Click "Azure Active Directory" in the left sidebar
-   - Click "App registrations"
+   - Click "App registrations" under Azure Services
    - Click "+ New registration"
 
 3. **Register the Application**
    - **Name**: `Fabric Lakehouse Data Migration Tool` (or your preferred name)
    - **Supported account types**: Select "Accounts in this organizational directory only"
-   - **Redirect URI**: Platform: `Web`, URI: `https://localhost:8000`
+   - **Redirect URI**: Platform: `Single-page application (SPA)`, URI: `https://localhost:8000`
    - Click "Register"
 
 4. **Configure Permissions**
-   - From the app registration page, click "API permissions"
+   - From the app registration page, under "Manage" click "API permissions"
    - Click "+ Add a permission"
 
 5. **Add Azure Storage Permission**
@@ -107,16 +106,7 @@ Power BI Service
    - A green checkmark will appear next to each permission
 
 8. **Get Your Credentials**
-   - From the app registration page, copy the **Application (client) ID**
-   - From the left sidebar, click "Certificates & secrets"
-   - Click "+ New client secret"
-   - Set expiration (e.g., 12 months)
-   - Click "Add"
-   - **Copy the secret value immediately** (you won't be able to see it again)
-
-9. **Get Your Tenant ID**
-   - From the left sidebar, click "Overview"
-   - Copy the **Directory (tenant) ID**
+   - From the app registration page, copy the **Application (client) ID** and the **Directory (tenant) ID
 
 ---
 
@@ -124,7 +114,7 @@ Power BI Service
 
 ### User Authentication (Required)
 
-The application uses your personal Microsoft account for login and file operations.
+The application uses your personal Microsoft account for login and file operations. On the initial start up, the application will prompt you to enter your Tenant and Client IDs. Enter the values from the registration steps above and follow the prompts. Follow the steps below in the event that you need to change these values in the future.
 
 **Required Setup:**
 
@@ -153,13 +143,11 @@ The application uses your personal Microsoft account for login and file operatio
 
 ### Service Principal (Optional - Advanced)
 
-For automated migrations or unattended operations, you can configure the backend to use a **Service Principal** instead of your personal credentials.
+For all migrations, you can configure the backend to use a **Service Principal** instead of your personal credentials.
 
 **Why use a Service Principal?**
-- Unattended/automated migrations
-- No individual user sign-in required
 - Separate credentials from personal account
-- Better for scheduled tasks
+- Allows Fabric administrators to control the visibility scope of the environment.
 
 #### Setup Service Principal:
 
@@ -169,8 +157,25 @@ For automated migrations or unattended operations, you can configure the backend
    - Click "+ New client secret"
    - Set expiration and description
    - Copy the **secret value immediately** (can't view again)
+   
+2. **Add Azure Storage Permission**
+   - Select "Azure Storage" from the list
+   - Click "Delegated permissions"
+   - Check ☑️ `user_impersonation`
+   - Click "Add permissions"
 
-2. **Grant Service Principal Access to Lakehouse**
+3. **Add Power BI Service Permissions**
+   - Click "+ Add a permission" again
+   - Search for "Power BI Service"
+   - Select it from the results
+   - Click "Delegated permissions"
+   - Check the following permissions:
+     - ☑️ `Dataset.ReadWrite.All`
+     - ☑️ `Item.ReadWrite.All`
+     - ☑️ `Lakehouse.ReadWrite.All`
+   - Click "Add permissions"
+   
+4. **Grant Service Principal Access to Lakehouse**
    - In Microsoft Fabric, open your workspace
    - Go to "Workspace settings" → "Members"
    - Click "Add service principal or user" (or similar)
@@ -196,10 +201,10 @@ For automated migrations or unattended operations, you can configure the backend
    - **SP_CLIENT_ID**: Your app's Client ID from Azure Portal
    - **SP_CLIENT_SECRET**: The secret value you copied (NOT the ID)
 
-4. **Save and Restart Backend**
+4. **Save and Restart the App**
    - Press `Ctrl + S` to save
-   - Restart the backend service
-   - Backend will now use service principal credentials for API operations
+   - Restart the application, by right clicking on the system tray icon and selecting "Quit" and launching the desktop shortcut again.
+   - The application will now use service principal credentials for API operations
 
 **Important Notes:**
 - User Authentication (AZURE_*) is always required for login
@@ -233,12 +238,14 @@ For automated migrations or unattended operations, you can configure the backend
    - Click "Select Files" or drag & drop files
    - Supported formats: CSV, XLSX (Excel)
    - Multiple files can be uploaded at once
+   - Can choose to overwrite if files already exist
+   - Can choose to move data into tables after upload
 
 4. **Configure Tables**
    - For each file, configure:
-     - **Table Name**: Name for the table in Lakehouse
-     - **Enable Schema Detection**: Auto-detect column types
-     - **Delimiter** (CSV only): Specify column separator (comma, semicolon, pipe, tab)
+     - **Table Choice**: Choose to whether upload the data into a new or an existing table
+     - **Target Table**: Name for the table in Lakehouse. Will display existing tables for Existing Table table choice mode
+     - **Load Mode** (Existing Table only): Choose between Overwrite or Append
 
 5. **Review and Start**
    - Review all configurations
@@ -247,7 +254,7 @@ For automated migrations or unattended operations, you can configure the backend
 
 6. **View Results**
    - Tables will appear in Microsoft Fabric Lakehouse
-   - Click "View in Fabric" to open your workspace
+   - "History" tab will show you a history of all of your migrations performed using the app
 
 ### Advanced Features
 
@@ -255,11 +262,6 @@ For automated migrations or unattended operations, you can configure the backend
 - **Enable Debug Logging**: Detailed error information for troubleshooting
 - **View Application Logs**: Real-time logs of all operations
 - **Report a Problem**: Submit GitHub issue with auto-included diagnostics
-
-**Keyboard Shortcuts**:
-- `F5` - Refresh workspace connection
-- `Ctrl + L` - Clear application logs
-- `Ctrl + ,` - Open settings
 
 ---
 
@@ -308,7 +310,7 @@ For automated migrations or unattended operations, you can configure the backend
 **"Sign in failed" or "Authentication error"**
 - Verify your Tenant ID, Client ID are correct
 - Check that the application is registered in your Azure AD
-- Ensure redirect URI is set to `http://localhost:3000`
+- Ensure redirect URI is set to `https://localhost:8000`
 - Administrator may need to grant consent to permissions
 
 **"Lakehouse not found"**
@@ -398,4 +400,4 @@ This software is provided under the terms of the End User License Agreement (EUL
 
 ---
 
-**Made with ❤️ for Microsoft Fabric enthusiasts**
+**Made with ❤️ for the Microsoft Fabric community**
