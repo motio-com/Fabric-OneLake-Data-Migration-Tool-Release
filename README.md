@@ -379,7 +379,7 @@ For all migrations, you can configure the backend to use a **Service Principal**
 
 ## 📝 Version Information
 
-**Current Version**: 1.0.6  
+**Current Version**: 1.0.8  
 **Last Updated**: May 2026  
 **License**: See LICENSE.txt included in the installation
 
