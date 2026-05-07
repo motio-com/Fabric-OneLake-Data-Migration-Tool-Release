@@ -4,12 +4,13 @@ All official releases are published here.
 
 ## Latest Version
 
-- Version: v1.0.6
+- Version: v1.0.7
 - Download: [OneLakeDataMigration-latest.exe](../OneLakeDataMigration-latest.exe)
 - Installer: [OneLakeDataMigration-latest-installer.exe](../OneLakeDataMigration-latest-installer.exe)
 
 ## Previous Releases
 
+- [v1.0.7](1.0.7/)
 - [v1.0.6](1.0.6/)
 - [v1.0.5](1.0.5/)
 - [v1.0.4](1.0.4/)
