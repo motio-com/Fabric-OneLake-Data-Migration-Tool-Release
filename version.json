@@ -1,7 +1,7 @@
 ﻿{
     "download_url":  "https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/raw/main/OneLakeDataMigration-latest-installer.exe",
-    "updated_at":  "2026-05-07T19:36:46.7690407+00:00",
-    "release_page":  "https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/releases/tag/v1.0.8",
+    "updated_at":  "2026-05-11T20:14:44.5208946+00:00",
+    "release_page":  "https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/releases/tag/v1.1.0",
     "download_portable":  "https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/raw/main/OneLakeDataMigration-latest.exe",
-    "latest_version":  "1.0.8"
+    "latest_version":  "1.1.0"
 }
