@@ -373,13 +373,13 @@ For all migrations, you can configure the backend to use a **Service Principal**
 - **[Azure AD App Registration Guide](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)**
 - **[Microsoft Fabric Documentation](https://learn.microsoft.com/en-us/fabric/)**
 - **[Power BI Service Permissions Guide](https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-role)**
-- **[GitHub Repository](https://github.com/[your-org]/fabric-lakehouse-data-migration-tool)**
+- **[Release Notes](https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/blob/main/RELEASE_NOTES.md)**
 
 ---
 
 ## 📝 Version Information
 
-**Current Version**: 1.2.0  
+**Current Version**: [1.2.1](https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/blob/main/RELEASE_NOTES.md)  
 **Last Updated**: May 2026  
 **License**: See LICENSE.txt included in the installation
 
