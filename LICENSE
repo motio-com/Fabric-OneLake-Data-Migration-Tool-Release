@@ -1,191 +1,176 @@
-END USER LICENSE AGREEMENT (EULA)
-Fabric OneLake Data Migration Tool
-Effective Date: April 24, 2026
+TERMS OF USE AND END USER LICENSE AGREEMENT
 
-==============================================
-1. GRANT OF LICENSE
-==============================================
+OneLake Data Migration Tool
 
-Motio Labs, a division of Motio, Inc. ("Company," "we," "us," "our"), hereby 
-grants you a limited, non-exclusive, non-transferable, royalty-free license to 
-use the Fabric OneLake Data Migration Tool software (the "Software") in its 
-compiled form only, subject to the terms and conditions of this End User License 
-Agreement ("Agreement").
+Effective Date: May 21, 2026
+License Version: 1.0
 
-The Software is proprietary software provided as an experimental, public software 
-playground designed to offer the business intelligence community quick and 
-convenient solutions to address their everyday BI lifecycle challenges and data 
-migration requirements. This Software is NOT open source software.
+===============================================
+1. IMPORTANT NOTICE AND ACCEPTANCE OF TERMS
+===============================================
 
-==============================================
-2. PERMITTED USE
-==============================================
+These Terms of Use and End User License Agreement (the "Terms" or "Agreement") are a binding legal agreement between you, individually and, if applicable, on behalf of the entity you represent ("you," "your," or "Licensee"), and Motio, Inc., a Texas corporation, including its Motio Labs initiative ("Motio," "we," "our," or "us"), governing your access to and use of the OneLake Data Migration Tool, including any installer, executable, source code, documentation, updates, and related materials made available by Motio (collectively, the "Software" or "Utility").
 
-You are permitted to:
-- Download, install, and use the Software for your internal business operations
-- Use the compiled/executable version of the Software in accordance with this 
-  license
-- Create reports, documentation, and records based on the results obtained from 
-  using the Software
+BY CHECKING THE "I AGREE" BOX, CLICKING "ACCEPT," DOWNLOADING, INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE, YOU EXPRESSLY ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS, UNDERSTAND THEM, AND AGREE TO BE BOUND BY THEM. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT CHECK THE "I AGREE" BOX, DO NOT CLICK "ACCEPT," AND DO NOT DOWNLOAD, INSTALL, OR USE THE SOFTWARE.
 
-This is a free license to use, not a free or open source license. The source code 
-and intellectual property remain the exclusive property of Motio, Inc.
+If you are accepting these Terms on behalf of a company, organization, or other legal entity, you represent and warrant that you have the full legal authority to bind that entity to these Terms, and your acceptance will be deemed the acceptance of that entity. You must be at least eighteen (18) years of age and legally able to form a binding contract to use the Software.
 
-==============================================
-3. PROHIBITED USE
-==============================================
+===============================================
+2. DEFINITIONS
+===============================================
 
-You are strictly prohibited from:
-- Redistributing, reselling, or providing the Software (in whole or in part, 
-  whether modified or unmodified) to any third party without prior written 
-  consent from Motio, Inc.
-- Sublicensing, leasing, renting, or lending the Software to any individual or 
-  organization
-- Publicly hosting or making the Software available for download or access 
-  except as expressly permitted by Motio, Inc.
-- Accessing, decompiling, reverse engineering, disassembling, or attempting to 
-  derive the source code of the Software
-- Creating derivative works, modifications, or adaptations of the Software
-- Removing or altering any proprietary notices, labels, or marks contained in 
-  the Software
-- Using the Software for any commercial purpose or to create competing products 
-  or services
-- Copying or reproducing the Software except for a single backup copy for your 
-  own internal use
+"Customer Data" means any data, files, content, or other information processed by the Software at your direction, including, without limitation, Excel (.xlsx, .xls) and CSV files and any data loaded, written, modified, or transferred to a destination data store (including, without limitation, Microsoft Fabric OneLake).
 
-Any unauthorized redistribution, sublicensing, reverse engineering, or 
-modification of the Software is a material breach of this Agreement and may 
-subject you to civil and criminal liability.
+"Destination Environment" means any data lake, lakehouse, storage account, workspace, or other data store to which the Software writes or in which it processes Customer Data, including Microsoft Fabric OneLake and any associated Microsoft Azure services.
 
-==============================================
-4. WARRANTY DISCLAIMER
-==============================================
+"Documentation" means the user guides, release notes, README files, FAQs, and other materials made available by Motio in connection with the Software, as updated from time to time.
 
-THE SOFTWARE IS PROVIDED "AS-IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY 
-KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+"Third-Party Services" means any service, platform, or product not owned or operated by Motio, including Microsoft Azure, Microsoft Fabric, Microsoft Power BI, OneLake, and any related Microsoft authentication, identity, storage, or networking services.
 
-Motio, Inc. makes no representations or warranties regarding:
-- The accuracy, completeness, or reliability of the Software
-- The Software's uninterrupted operation or freedom from errors, bugs, or 
-  defects
-- The Software's compatibility with your specific systems, data, or requirements
-- The results obtained from using the Software
+===============================================
+3. LICENSE GRANT
+===============================================
 
-You assume all responsibility and risk for your use of the Software. Motio, Inc. 
-does not guarantee or warrant that the Software will meet your requirements or 
-solve your business challenges.
+Subject to your continuing compliance with these Terms, Motio grants you a limited, personal, non-exclusive, non-transferable, non-sublicensable, royalty-free, revocable license to download, install, and use the Software in object code form solely for your internal business or personal evaluation, testing, and use. No fee is charged for this license; the Software is provided to you free of charge.
 
-==============================================
-5. LIMITATION OF LIABILITY
-==============================================
+You may not, and may not permit any third party to: (a) sell, rent, lease, sublicense, distribute, or otherwise commercially exploit the Software; (b) modify, adapt, translate, or create derivative works of the Software, except as expressly permitted by applicable law notwithstanding this limitation; (c) reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code or underlying structure of the Software, except to the extent expressly permitted by applicable law; (d) remove, alter, or obscure any proprietary notices on the Software; (e) use the Software in violation of any applicable law, regulation, or third-party right; or (f) use the Software to develop a competing product or service.
 
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL MOTIO, INC. 
-BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR 
-EXEMPLARY DAMAGES ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE 
-SOFTWARE, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, REVENUE, 
-DATA, BUSINESS INTERRUPTION, OR COST OF COVER, EVEN IF MOTIO, INC. HAS BEEN 
-ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+Motio and its licensors retain all right, title, and interest in and to the Software, including all intellectual property rights therein. No rights are granted to you by implication, estoppel, or otherwise except as expressly set forth in these Terms.
 
-Your sole and exclusive remedy for any breach of this Agreement or failure of 
-the Software shall be limited to the lesser of: (a) repairing or replacing the 
-affected Software; or (b) discontinuing use of the affected Software.
+===============================================
+4. BETA / PRE-RELEASE SOFTWARE; NO OBLIGATION
+===============================================
 
-==============================================
-6. SUPPORT AND MAINTENANCE
-==============================================
+You acknowledge and agree that the Software is provided as a free, pre-release, beta, and evaluation utility that has undergone only limited internal testing by Motio. The Software may contain errors, defects, bugs, or inaccuracies that could materially affect its operation. The Software is not intended for, and Motio does not represent that it is suitable for, production, mission-critical, life-safety, regulated, or other high-reliability use cases.
 
-Motio, Inc. provides software support and maintenance on a voluntary, best-effort 
-basis only. Support is not guaranteed and may be suspended or discontinued at any 
-time without notice.
+Motio has no obligation to provide maintenance, updates, upgrades, modifications, technical support, bug fixes, or any other services in connection with the Software. Any release notes, response to issues filed on a public code repository, or other communications from Motio are provided at Motio's sole discretion and on an as-available basis.
 
-In the event that issues, bugs, errors, or other problems are identified in the 
-Software, the Motio, Inc. engineering team will make reasonable efforts, at its 
-sole discretion, to address and resolve such issues in future software releases. 
-However, no timeline is guaranteed, and no particular issue is assured of 
-resolution.
+===============================================
+5. YOUR RESPONSIBILITY TO TEST AND VALIDATE
+===============================================
 
-==============================================
-7. MODIFICATION AND TERMINATION
-==============================================
+You are solely responsible for evaluating, testing, validating, and accepting the Software in your own environment before any use, and you are solely responsible for determining whether the Software is appropriate for your data, your systems, and your intended use case. Without limiting the foregoing, you agree that:
 
-Motio, Inc. reserves the absolute right to:
-- Modify, update, or discontinue the Software (in whole or in part) at any time 
-  and for any reason
-- Modify or change the terms and conditions of this Agreement
-- Discontinue access to the Software or any related services
-- Remove any and all Software components or features from public access
+- You will test the Software thoroughly in a non-production, isolated environment using non-production copies of any data before any use in or against a production environment.
+- You will independently verify the completeness, accuracy, integrity, and fitness-for-purpose of any output produced by the Software, including the row counts, structure, schema, and content of any Customer Data loaded into a Destination Environment.
+- You will create and maintain complete, verified backups of all Customer Data and the Destination Environment immediately before any use of the Software, and you will retain those backups for a period sufficient to permit full restoration if needed.
+- You will independently confirm that the Software meets your security, privacy, regulatory, contractual, and operational requirements before use.
+- You acknowledge that no Software output should be relied upon, distributed, or treated as authoritative until you have independently reviewed, tested, and accepted it.
 
-These modifications and discontinuations may occur without prior notice, advance 
-warning, or communication to any users. Your continued use of the Software 
-following any such modification constitutes your acceptance of the modified terms.
+Your continued use of the Software after testing constitutes your affirmative acceptance of the Software in its then-current condition, including any known and unknown defects, and your assumption of all risks associated with its use.
 
-==============================================
-8. INTELLECTUAL PROPERTY
-==============================================
+===============================================
+6. ACKNOWLEDGMENT OF DATA-HANDLING RISKS
+===============================================
 
-All intellectual property rights, including copyright, patent, trademark, and 
-trade secret rights in and to the Software are owned exclusively by Motio, Inc. 
-or its licensors. This Agreement does not grant you any ownership rights in the 
-Software, only a limited license to use it as expressly permitted herein.
+Because the Software reads source files and writes data to a Destination Environment, its operation inherently involves risks that you expressly acknowledge and assume. Without limiting any other provision of these Terms, you specifically acknowledge that the Software may, due to defects, environmental conditions, configuration choices, source-file characteristics, network or service issues, or other causes:
 
-This Software is NOT open source software. Although the Software is provided free 
-of charge for use, it remains proprietary software owned and controlled by Motio, 
-Inc. You have no right to access, obtain, or use the source code, and no open 
-source license applies. The source code, algorithms, design, architecture, and 
-all other intellectual property elements are confidential and proprietary to 
-Motio, Inc.
+- Insert duplicate, extra, missing, partial, malformed, or otherwise incorrect rows or records into the Destination Environment;
+- Corrupt, alter, overwrite, lock, or render unusable source Excel (.xlsx, .xls) or CSV files (or any other files or directories the Software accesses);
+- Corrupt, alter, overwrite, delete, or render unusable data, schemas, tables, lakehouses, workspaces, or other artifacts within the Destination Environment, including Microsoft Fabric OneLake;
+- Cause type conversion errors, encoding errors, truncation, loss of precision, loss of formatting, or loss of metadata;
+- Cause unintended consumption of Microsoft Azure, Microsoft Fabric, network, storage, or compute resources, and any resulting fees or charges;
+- Trigger authentication, authorization, throttling, or quota-related errors in Third-Party Services; and
+- Produce results that are silently inaccurate or appear successful when they are not.
 
-==============================================
-9. DATA AND PRIVACY
-==============================================
+You assume all risk arising out of or relating to the foregoing. You agree that you, and not Motio, are solely responsible for the integrity and protection of your source files, Customer Data, and Destination Environment, and for any restoration, remediation, re-load, or other corrective action required as a result of using the Software.
 
-You are responsible for maintaining backups of any data processed by the Software. 
-Motio, Inc. is not responsible for data loss, corruption, or unavailability that 
-may result from use of the Software. By using the Software, you acknowledge that 
-any sensitive data transmitted through or processed by the Software is done 
-entirely at your own risk.
+===============================================
+7. "AS IS" PROVISION; DISCLAIMER OF WARRANTIES
+===============================================
 
-==============================================
-10. INDEMNIFICATION
-==============================================
+THE SOFTWARE, DOCUMENTATION, AND ANY RELATED MATERIALS OR SERVICES ARE PROVIDED "AS IS," "AS AVAILABLE," AND "WITH ALL FAULTS," WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, MOTIO AND ITS AFFILIATES, LICENSORS, OFFICERS, DIRECTORS, EMPLOYEES, CONTRACTORS, AGENTS, AND SUPPLIERS (COLLECTIVELY, THE "MOTIO PARTIES") EXPRESSLY DISCLAIM ALL WARRANTIES, REPRESENTATIONS, AND CONDITIONS OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, RELIABILITY, COMPLETENESS, QUIET ENJOYMENT, TITLE, AND NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING, USAGE, OR TRADE.
 
-You agree to indemnify, defend, and hold harmless Motio, Inc., its officers, 
-directors, employees, and agents from and against any and all claims, damages, 
-losses, costs, and expenses (including reasonable attorneys' fees) arising out of 
-or resulting from:
-- Your use or misuse of the Software
-- Your violation of this Agreement or any applicable law
-- Your violation of any third-party rights
-- Any data loss or system damage resulting from your use of the Software
+WITHOUT LIMITING THE FOREGOING, THE MOTIO PARTIES MAKE NO WARRANTY OR REPRESENTATION THAT: (A) THE SOFTWARE WILL MEET YOUR REQUIREMENTS OR EXPECTATIONS; (B) THE SOFTWARE WILL OPERATE UNINTERRUPTED, ERROR-FREE, SECURE, FREE OF VIRUSES OR HARMFUL COMPONENTS, OR FREE FROM LOSS, CORRUPTION, OR ATTACK; (C) THE RESULTS OBTAINED FROM USE OF THE SOFTWARE WILL BE ACCURATE, COMPLETE, CURRENT, OR RELIABLE; (D) DEFECTS WILL BE CORRECTED; OR (E) THE SOFTWARE IS COMPATIBLE WITH ANY PARTICULAR HARDWARE, OPERATING SYSTEM, SERVICE, OR ENVIRONMENT.
 
-==============================================
-11. GOVERNING LAW
-==============================================
+ANY ORAL OR WRITTEN ADVICE PROVIDED BY MOTIO OR ITS AUTHORIZED REPRESENTATIVES SHALL NOT CREATE ANY WARRANTY. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR CONDITIONS; THE ABOVE EXCLUSIONS WILL APPLY TO YOU ONLY TO THE EXTENT PERMITTED BY APPLICABLE LAW, AND ANY MANDATORY WARRANTIES WILL BE LIMITED TO THE MINIMUM DURATION AND SCOPE PERMITTED BY LAW.
 
-This Agreement shall be governed by and construed in accordance with the laws of 
-the jurisdiction in which Motio, Inc. is incorporated, without regard to its 
-conflict of law principles. You agree to submit to the exclusive jurisdiction of 
-the courts located in that jurisdiction for any legal proceedings arising out of 
-or related to this Agreement.
+===============================================
+8. LIMITATION OF LIABILITY
+===============================================
 
-==============================================
-12. ENTIRE AGREEMENT
-==============================================
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL ANY OF THE MOTIO PARTIES BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, PUNITIVE, OR ENHANCED DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, GOODWILL, BUSINESS OPPORTUNITY, USE, OR DATA, OR FOR COSTS OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR FOR BUSINESS INTERRUPTION, REGARDLESS OF THE THEORY OF LIABILITY (WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, STATUTE, OR OTHERWISE), AND EVEN IF ANY MOTIO PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-This Agreement constitutes the entire agreement between you and Motio, Inc. with 
-respect to the Software and supersedes all prior and contemporaneous agreements, 
-understandings, negotiations, and discussions, whether oral or written, relating 
-to the Software.
+WITHOUT LIMITING THE FOREGOING, THE MOTIO PARTIES SHALL HAVE NO LIABILITY WHATSOEVER FOR ANY: (A) LOSS, CORRUPTION, MISORDERING, DUPLICATION, OR DELETION OF DATA OR FILES; (B) DAMAGE TO, OR DEGRADATION OF, ANY DESTINATION ENVIRONMENT, DATA LAKE, LAKEHOUSE, WORKSPACE, OR OTHER STORAGE OR COMPUTE ENVIRONMENT; (C) COSTS OR CHARGES INCURRED THROUGH ANY THIRD-PARTY SERVICE (INCLUDING MICROSOFT AZURE AND MICROSOFT FABRIC); OR (D) ACTS OR OMISSIONS OF ANY THIRD PARTY.
 
-==============================================
-ACKNOWLEDGMENT
-==============================================
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AGGREGATE LIABILITY OF THE MOTIO PARTIES ARISING OUT OF OR RELATING TO THESE TERMS OR THE SOFTWARE, WHETHER IN CONTRACT, TORT, OR OTHERWISE, SHALL NOT EXCEED ONE HUNDRED U.S. DOLLARS (US $100.00). YOU ACKNOWLEDGE THAT THE SOFTWARE IS PROVIDED FREE OF CHARGE AND THAT THE FOREGOING ALLOCATIONS OF RISK ARE AN ESSENTIAL BASIS OF THE BARGAIN BETWEEN THE PARTIES, AND THAT MOTIO WOULD NOT MAKE THE SOFTWARE AVAILABLE WITHOUT THEM. THESE LIMITATIONS WILL APPLY NOTWITHSTANDING THE FAILURE OF ANY ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.
 
-BY INSTALLING OR USING THE SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS 
-AGREEMENT, UNDERSTAND ITS TERMS, AND AGREE TO BE BOUND BY ALL OF ITS PROVISIONS.
+===============================================
+9. INDEMNIFICATION
+===============================================
 
-If you do not agree with the terms of this Agreement, you must immediately cease 
-all use of the Software and uninstall it from your systems.
+You agree to defend, indemnify, and hold harmless the Motio Parties from and against any and all claims, demands, actions, losses, liabilities, judgments, settlements, damages, fines, penalties, costs, and expenses (including reasonable attorneys' fees and court costs) arising out of or relating to: (a) your use of, or inability to use, the Software; (b) your Customer Data, source files, or Destination Environment; (c) your violation of these Terms; (d) your violation of any applicable law, regulation, or third-party right (including, without limitation, any agreement governing your use of Microsoft Azure, Microsoft Fabric, or other Third-Party Services); and (e) any acts or omissions by you or anyone using the Software through your credentials, devices, or accounts. Motio reserves the right, at its own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which case you will cooperate with Motio in asserting any available defenses.
 
-Â© 2026 Motio, Inc. All Rights Reserved.
+===============================================
+10. CUSTOMER DATA, CREDENTIALS, AND SERVICES
+===============================================
+
+You retain all right, title, and interest in and to your Customer Data, subject to the licenses you grant to applicable Third-Party Services. The Software is intended to operate locally on your device; you are solely responsible for your Customer Data, your source files, your Azure and Microsoft Fabric credentials, and any tokens, secrets, or other authentication material used in connection with the Software, including their secure storage, rotation, and revocation.
+
+Your use of any Third-Party Service is governed exclusively by the agreements between you and that third party. Motio is not a party to those agreements, has no responsibility or liability for any Third-Party Service, and makes no representation regarding the availability, performance, or terms of any Third-Party Service. The Software is not endorsed, sponsored by, or affiliated with Microsoft Corporation, and all references to Microsoft products are for descriptive purposes only.
+
+To the extent the Software collects diagnostic, telemetry, or crash data, such collection, if any, is described in the Documentation. You are solely responsible for ensuring that your use of the Software complies with all applicable privacy, data protection, export control, and other laws and regulations.
+
+===============================================
+11. THIRD-PARTY COMPONENTS
+===============================================
+
+The Software may include open-source or third-party software components, each of which is provided under its own license. Those licenses are identified in the Documentation or accompanying notices. To the extent of any conflict between these Terms and the license terms applicable to a third-party component, the third-party license will govern solely with respect to that component.
+
+===============================================
+12. TERM AND TERMINATION
+===============================================
+
+These Terms take effect when you first accept them or use the Software and continue until terminated. You may terminate at any time by ceasing all use of the Software and deleting all copies in your possession or control. Motio may suspend or terminate your license and your access to the Software at any time, with or without notice, for any reason or no reason. Upon termination, all rights granted to you under these Terms will immediately cease, and you must promptly delete all copies of the Software. Sections relating to ownership, restrictions, disclaimers, limitations of liability, indemnification, governing law, dispute resolution, and any provision that by its nature should survive termination will survive.
+
+===============================================
+13. UPDATES AND MODIFICATIONS TO THESE TERMS
+===============================================
+
+Motio may modify these Terms at any time by posting revised Terms in connection with the Software or on a Motio website. Your continued access to or use of the Software after the effective date of any revised Terms constitutes your acceptance of those Terms. If you do not agree to the revised Terms, you must stop using the Software.
+
+===============================================
+14. EXPORT COMPLIANCE
+===============================================
+
+You may not export, re-export, or transfer the Software, directly or indirectly, in violation of any applicable export control or sanctions laws, including those of the United States. You represent and warrant that you are not located in, under the control of, or a national or resident of any country or on any list to which such export is prohibited. The Software is "commercial computer software" and "commercial computer software documentation," and U.S. Government users acquire only those rights set forth in these Terms.
+
+===============================================
+15. GOVERNING LAW AND DISPUTE RESOLUTION
+===============================================
+
+These Terms, and any dispute, claim, or controversy arising out of or relating to these Terms or the Software, are governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict-of-laws principles. The United Nations Convention on Contracts for the International Sale of Goods does not apply. The parties agree to the exclusive jurisdiction of, and venue in, the state and federal courts located in Collin County, Texas, and each party hereby waives any objection to such jurisdiction or venue, including any defense of inconvenient forum. EACH PARTY IRREVOCABLY WAIVES ANY RIGHT TO TRIAL BY JURY IN ANY ACTION ARISING OUT OF OR RELATING TO THESE TERMS.
+
+Any claim or cause of action you may have arising out of or relating to these Terms or the Software must be commenced within one (1) year after the claim or cause of action accrues; otherwise, that claim or cause of action is permanently barred.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU AND MOTIO EACH AGREE THAT ANY DISPUTE, CLAIM, OR CONTROVERSY ARISING OUT OF OR RELATING TO THESE TERMS, THE SOFTWARE, OR THE RELATIONSHIP BETWEEN THE PARTIES SHALL BE BROUGHT SOLELY IN AN INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF, CLAIMANT, OR CLASS MEMBER IN ANY PURPORTED CLASS, COLLECTIVE, CONSOLIDATED, COORDINATED, MASS, REPRESENTATIVE, OR PRIVATE ATTORNEY GENERAL ACTION OR PROCEEDING. YOU AND MOTIO EXPRESSLY WAIVE ANY RIGHT TO PARTICIPATE IN, SERVE AS A REPRESENTATIVE IN, ACT AS A PRIVATE ATTORNEY GENERAL IN, OR RECEIVE ANY RECOVERY FROM, ANY CLASS, COLLECTIVE, CONSOLIDATED, OR REPRESENTATIVE ACTION BROUGHT AGAINST THE OTHER PARTY. NO COURT OR OTHER ADJUDICATOR MAY CONSOLIDATE, JOIN, OR OTHERWISE COMBINE MORE THAN ONE PERSON'S CLAIMS WITHOUT THE PRIOR WRITTEN CONSENT OF ALL AFFECTED PARTIES, AND NO COURT OR OTHER ADJUDICATOR MAY PRESIDE OVER ANY FORM OF A REPRESENTATIVE, CLASS, OR COLLECTIVE PROCEEDING. IF THIS CLASS ACTION WAIVER IS FOUND TO BE UNENFORCEABLE WITH RESPECT TO ANY CLAIM OR REMEDY, THEN THAT CLAIM OR REMEDY (AND ONLY THAT CLAIM OR REMEDY) SHALL BE SEVERED AND BROUGHT IN A COURT OF COMPETENT JURISDICTION, BUT THIS WAIVER SHALL REMAIN IN FULL FORCE AND EFFECT AS TO ALL OTHER CLAIMS AND REMEDIES.
+
+===============================================
+16. MISCELLANEOUS
+===============================================
+
+Entire Agreement: These Terms, together with the Documentation and any other terms expressly incorporated by reference, constitute the entire agreement between you and Motio regarding the Software and supersede all prior or contemporaneous communications, proposals, and agreements, whether oral or written.
+
+Severability: If any provision of these Terms is held to be invalid, illegal, or unenforceable, the remaining provisions will continue in full force and effect, and the invalid provision will be modified to the minimum extent necessary to make it enforceable.
+
+No Waiver: No waiver of any provision of these Terms will be effective unless in writing and signed by Motio. No failure or delay by Motio in exercising any right will operate as a waiver.
+
+Assignment: You may not assign or transfer these Terms or any rights or obligations hereunder, by operation of law or otherwise, without Motio's prior written consent. Motio may assign these Terms at any time without notice. Any attempted assignment in violation of this Section is void.
+
+Relationship of the Parties: The parties are independent contractors. These Terms do not create any partnership, joint venture, agency, employment, or fiduciary relationship.
+
+Force Majeure: Motio will not be liable for any failure or delay in performance caused by circumstances beyond its reasonable control.
+
+Notices: Notices to Motio must be sent in writing to asarir@motio.com or such other address as Motio may designate. Motio may provide notices to you through the Software, by email, or by posting on a Motio website.
+
+Headings: Headings are provided for convenience only and have no legal effect.
+
+===============================================
+17. ACKNOWLEDGMENT AND ACCEPTANCE
+===============================================
+
+BY CHECKING THE "I AGREE" BOX, CLICKING "ACCEPT," OR OTHERWISE DOWNLOADING, INSTALLING, OR USING THE SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTAND THESE TERMS, AGREE TO BE BOUND BY THEM, AND ACCEPT THE SOFTWARE "AS IS," "AS AVAILABLE," AND "WITH ALL FAULTS," WITH FULL ASSUMPTION OF ALL RISKS ASSOCIATED WITH ITS USE, INCLUDING RISKS TO YOUR FILES, YOUR DATA, AND YOUR DESTINATION ENVIRONMENT.
+
+===============================================
+
+(C) 2026 Motio, Inc. All Rights Reserved.
