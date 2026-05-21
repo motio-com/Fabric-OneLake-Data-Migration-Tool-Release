@@ -379,7 +379,7 @@ For all migrations, you can configure the backend to use a **Service Principal**
 
 ## 📝 Version Information
 
-**Current Version**: [1.2.1](https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/blob/main/RELEASE_NOTES.md)  
+**Current Version**: [1.2.2](https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/blob/main/RELEASE_NOTES.md)  
 **Last Updated**: May 2026  
 **License**: See LICENSE.txt included in the installation
 
