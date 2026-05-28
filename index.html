@@ -463,6 +463,177 @@
             font-weight: 600;
             margin-left: 10px;
         }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px;
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 24px;
+            color: var(--dark);
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: #999;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.2s;
+        }
+
+        .modal-close:hover {
+            color: var(--dark);
+        }
+
+        .modal-eula-text {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        .modal-eula-text strong {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+
+        .modal-eula-text p {
+            margin-bottom: 12px;
+        }
+
+        .modal-eula-text a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .modal-eula-text a:hover {
+            text-decoration: underline;
+        }
+
+        .eula-form {
+            padding: 24px;
+            border-top: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 14px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: inherit;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.1);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+            cursor: pointer;
+            accent-color: var(--primary);
+        }
+
+        .checkbox-group label {
+            margin: 0;
+            margin-left: 8px;
+            cursor: pointer;
+            font-weight: 400;
+        }
+
+        @media (max-width: 600px) {
+            .modal-content {
+                max-height: 95vh;
+            }
+
+            .modal-header {
+                padding: 16px;
+            }
+
+            .modal-header h2 {
+                font-size: 20px;
+            }
+
+            .modal-eula-text {
+                padding: 16px;
+            }
+
+            .eula-form {
+                padding: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -507,7 +678,7 @@
             <h2 class="section-title">See It In Action</h2>
             <div class="video-container">
                 <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/xje0uL5l3go" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                    <iframe src="https://www.youtube.com/embed/2CddPfCSNaY" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -590,14 +761,14 @@
                 <div class="download-card">
                     <h3>📦 Windows Installer</h3>
                     <p>Professional installer package with Start Menu shortcuts and automatic updates support</p>
-                    <a href="https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/raw/refs/heads/main/OneLakeDataMigration-latest-installer.exe" class="btn" download>
+                    <a href="javascript:void(0)" class="btn">
                         Download Installer (50.3 MB)
                     </a>
                 </div>
                 <div class="download-card">
                     <h3>💻 Portable Executable</h3>
                     <p>Lightweight standalone executable, perfect for USB drives and restricted environments</p>
-                    <a href="https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/raw/refs/heads/main/OneLakeDataMigration-latest.exe" class="btn" download>
+                    <a href="javascript:void(0)" class="btn">
                         Download Executable (50.2 MB)
                     </a>
                 </div>
@@ -691,7 +862,7 @@
         <div class="footer-content">
             <div class="footer-links">
                 <a href="https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release">GitHub Repository</a>
-                <a href="https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/blob/main/RELEASE_NOTES.md">Releases Notes</a>
+                <a href="https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/tree/main/releases">View Releases</a>
                 <a href="https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/issues/new">Report Issues</a>
                 <a href="mailto:asarir@motio.com">Contact Us</a>
             </div>
@@ -702,8 +873,265 @@
         </div>
     </footer>
 
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden_iframe" style="display: none;"></iframe>
+
+    <!-- EULA Modal -->
+    <div id="eulaModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Software License Agreement</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-eula-text" id="eulaText">
+                <!-- EULA will be inserted here -->
+            </div>
+            <form id="eulaForm" class="eula-form">
+                <div class="form-group">
+                    <label for="userName">Full Name *</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email Address *</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agreeCheckbox" name="agree" required>
+                    <label for="agreeCheckbox" style="display: inline; margin-left: 8px;">I agree to the Terms of Use and License Agreement</label>
+                </div>
+                <button type="button" id="downloadBtn" class="btn btn-primary" style="width: 100%; cursor: not-allowed; opacity: 0.5;" disabled>
+                    Download Now
+                </button>
+                <p style="font-size: 12px; color: #666; margin-top: 12px; text-align: center;">
+                    This form is secure. We never sell or share your data.
+                </p>
+            </form>
+        </div>
+    </div>
+
     <!-- FAQ Toggle Script -->
     <script>
+        // Configuration
+        const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfnvhNMdk46M7lcXGo5khvUYHNs7kreFQB0v4baVUlfUS2U8g/formResponse';
+        const FIELD_IDS = {
+            name: 'entry.1136537137',
+            email: 'entry.1792264971',
+            downloadType: 'entry.404791991',
+            licenseVersion: 'entry.1321149759'
+        };
+        const LICENSE_VERSION = '1.0';
+        const LICENSE_URL = 'https://raw.githubusercontent.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/main/LICENSE';
+        
+        const OBFUSCATED_URLS = {
+            installer: 'aHR0cHM6Ly9naXRodWIuY29tL21vdGlvLWNvbS9GYWJyaWMtT25lTGFrZS1EYXRhLU1pZ3JhdGlvbi1Ub29sLVJlbGVhc2UvcmF3L3JlZnMvaGVhZHMvbWFpbi9PbmVMYWtlRGF0YU1pZ3JhdGlvbi1sYXRlc3QtaW5zdGFsbGVyLmV4ZQ==',
+            portable: 'aHR0cHM6Ly9naXRodWIuY29tL21vdGlvLWNvbS9GYWJyaWMtT25lTGFrZS1EYXRhLU1pZ3JhdGlvbi1Ub29sLVJlbGVhc2UvcmF3L3JlZnMvaGVhZHMvbWFpbi9PbmVMYWtlRGF0YU1pZ3JhdGlvbi1sYXRlc3QuZXhl'
+        };
+        
+        function getDownloadUrl(type) {
+            const encoded = type === 'Windows Installer' ? OBFUSCATED_URLS.installer : OBFUSCATED_URLS.portable;
+            return atob(encoded);
+        }
+        
+        let downloadType = '';
+
+        // Fetch and display EULA from GitHub
+        async function initializeModal() {
+            const eulaTextDiv = document.getElementById('eulaText');
+            try {
+                const response = await fetch(LICENSE_URL);
+                if (response.ok) {
+                    const licenseText = await response.text();
+                    eulaTextDiv.innerHTML = `<pre style="white-space: pre-wrap; word-wrap: break-word; font-family: inherit; font-size: 13px; line-height: 1.6;">${escapeHtml(licenseText)}</pre>`;
+                } else {
+                    eulaTextDiv.innerHTML = '<p>Unable to load license agreement. Please check the <a href="https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/blob/main/LICENSE" target="_blank">GitHub repository</a> for the full license.</p>';
+                }
+            } catch (err) {
+                console.error('Error loading license:', err);
+                eulaTextDiv.innerHTML = '<p>Unable to load license agreement. Please check the <a href="https://github.com/motio-com/Fabric-OneLake-Data-Migration-Tool-Release/blob/main/LICENSE" target="_blank">GitHub repository</a> for the full license.</p>';
+            }
+        }
+        
+        // Helper function to escape HTML
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Handle download button clicks
+        function setupDownloadHandlers() {
+            document.querySelectorAll('.download-card .btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    downloadType = this.closest('.download-card').querySelector('h3').textContent.includes('Installer') 
+                        ? 'Windows Installer' 
+                        : 'Portable Executable';
+                    
+                    // Reset form
+                    document.getElementById('eulaForm').reset();
+                    document.getElementById('downloadBtn').disabled = true;
+                    document.getElementById('downloadBtn').style.opacity = '0.5';
+                    document.getElementById('downloadBtn').style.cursor = 'not-allowed';
+                    
+                    // Show modal
+                    document.getElementById('eulaModal').style.display = 'flex';
+                });
+            });
+        }
+
+        // Close modal
+        function setupModalClose() {
+            document.getElementById('modalClose').addEventListener('click', () => {
+                document.getElementById('eulaModal').style.display = 'none';
+            });
+
+            document.getElementById('eulaModal').addEventListener('click', (e) => {
+                if (e.target.id === 'eulaModal') {
+                    document.getElementById('eulaModal').style.display = 'none';
+                }
+            });
+        }
+
+        // Check if form is valid
+        function updateDownloadButtonState() {
+            const name = document.getElementById('userName').value.trim();
+            const email = document.getElementById('userEmail').value.trim();
+            const agreeChecked = document.getElementById('agreeCheckbox').checked;
+            
+            const isValid = name.length >= 2 && validateEmail(email) && agreeChecked;
+            
+            const btn = document.getElementById('downloadBtn');
+            if (isValid) {
+                btn.disabled = false;
+                btn.style.opacity = '1';
+                btn.style.cursor = 'pointer';
+            } else {
+                btn.disabled = true;
+                btn.style.opacity = '0.5';
+                btn.style.cursor = 'not-allowed';
+            }
+        }
+
+        // Real-time email validation
+        document.getElementById('userEmail').addEventListener('input', function() {
+            if (this.value && !validateEmail(this.value)) {
+                this.style.borderColor = '#ff4444';
+                this.style.boxShadow = '0 0 0 3px rgba(255, 68, 68, 0.1)';
+            } else {
+                this.style.borderColor = 'var(--border)';
+                this.style.boxShadow = 'none';
+            }
+            updateDownloadButtonState();
+        });
+
+        // Real-time name validation
+        document.getElementById('userName').addEventListener('input', function() {
+            if (this.value && this.value.trim().length < 2) {
+                this.style.borderColor = '#ff4444';
+                this.style.boxShadow = '0 0 0 3px rgba(255, 68, 68, 0.1)';
+            } else {
+                this.style.borderColor = 'var(--border)';
+                this.style.boxShadow = 'none';
+            }
+            updateDownloadButtonState();
+        });
+
+        // Handle checkbox toggle
+        document.getElementById('agreeCheckbox').addEventListener('change', updateDownloadButtonState);
+
+        // Helper function to validate email
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Handle download submission
+        document.getElementById('downloadBtn').addEventListener('click', async (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('userName').value.trim();
+            const email = document.getElementById('userEmail').value.trim();
+            
+            // Validate name
+            if (!name) {
+                alert('Please enter your full name');
+                return;
+            }
+            
+            if (name.length < 2) {
+                alert('Please enter a valid name (at least 2 characters)');
+                return;
+            }
+            
+            // Validate email
+            if (!email) {
+                alert('Please enter your email address');
+                return;
+            }
+            
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            // Submit to Google Forms using a hidden form
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = GOOGLE_FORM_URL;
+            form.target = 'hidden_iframe';
+            
+            const nameField = document.createElement('input');
+            nameField.type = 'hidden';
+            nameField.name = FIELD_IDS.name;
+            nameField.value = name;
+            form.appendChild(nameField);
+            
+            const emailField = document.createElement('input');
+            emailField.type = 'hidden';
+            emailField.name = FIELD_IDS.email;
+            emailField.value = email;
+            form.appendChild(emailField);
+            
+            const typeField = document.createElement('input');
+            typeField.type = 'hidden';
+            typeField.name = FIELD_IDS.downloadType;
+            typeField.value = downloadType;
+            form.appendChild(typeField);
+            
+            const versionField = document.createElement('input');
+            versionField.type = 'hidden';
+            versionField.name = FIELD_IDS.licenseVersion;
+            versionField.value = LICENSE_VERSION;
+            form.appendChild(versionField);
+            
+            document.body.appendChild(form);
+            form.submit();
+            document.body.removeChild(form);
+            
+            // Close modal and trigger download
+            document.getElementById('eulaModal').style.display = 'none';
+            
+            // Give the form submission a moment to process
+            setTimeout(() => {
+                // Get obfuscated download URL
+                const downloadUrl = getDownloadUrl(downloadType);
+                
+                // Determine filename based on type
+                const filename = downloadType === 'Windows Installer' 
+                    ? 'OneLakeDataMigration-latest-installer.exe' 
+                    : 'OneLakeDataMigration-latest.exe';
+                
+                // Trigger download
+                const link = document.createElement('a');
+                link.href = downloadUrl;
+                link.download = filename;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }, 100);
+        });
+
+        // FAQ Toggle
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', function() {
                 const answer = this.nextElementSibling;
@@ -734,6 +1162,13 @@
                     target.scrollIntoView({ behavior: 'smooth' });
                 }
             });
+        });
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeModal();
+            setupDownloadHandlers();
+            setupModalClose();
         });
     </script>
 </body>
